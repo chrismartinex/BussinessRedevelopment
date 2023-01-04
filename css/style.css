@@ -1,3 +1,64 @@
-h1 {
- background-color: red;
+/*Navbar styles*/
+
+.navbar {
+    --bs-emphasis-color-rgb: 255, 255, 255;
+    --bs-navbar-toggler-border-color: rgba(var(--bs-emphasis-color-rgb), 1);
+}
+
+.navbar-toggler-icon {
+    background-image:url("../Assets/List.png");
+
+}
+
+.bg-light {
+    --bs-light-rgb: 120, 0, 0;
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-icon-desktop {
+    display: none;
+}
+
+.navbar-icon-mobile {
+    display: block;
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav {
+        gap: 3rem;
+    }
+    
+    .navbar-icon-desktop {
+        display: block;
+    }
+
+    .navbar-icon-mobile {
+        display: none;
+    }
+}
+
+.navbar-nav {
+    align-items: center;
+    /* gap: 3rem; */
+}
+
+.nav-link {
+    color: white;
+    font-size: 24px;
+}
+
+/* Footer styles */
+
+.my-footer {
+    display: flex;
+    justify-content: center;
+    background-color: #003049;
+}
+
+.footer-contact-column {
+    display: block;
 }
