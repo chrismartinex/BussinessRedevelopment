@@ -87,21 +87,27 @@
   margin-left: auto;
   margin-right: auto;
 } */
-.containerBg{
-  /* display:inline-flex;
-  flex-wrap:wrap; */
-  border:1px solid black;
+.backgroundBlue {
+    position: absolute;
+    width: 1856px;
+    height: 617px;
+    left: 32px;
+    top: 195px;
 }
-.div-1 {
-
-        background-color: #003049;
-    }
-.blockbg {
- background: rgb(255,255,255);
-background: linear-gradient(0deg, rgba(255,255,255,1) 50%, rgba(0,48,73,1) 50%);
+.textColor {
+    color: white;
+    margin-top: 50px;
+    font-weight: 300;
+    font-size: 66px;
+    font-family: 'Inria Sans', sans-serif;
 }
-.textcolor {
- color: white;
+/* .container {
+    width: 7000px;
+} */
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Drew Styles */
