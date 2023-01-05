@@ -48,7 +48,8 @@
 
 .nav-link {
     color: white;
-    font-size: 24px;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 36px;
 }
 
 /* Footer styles */
