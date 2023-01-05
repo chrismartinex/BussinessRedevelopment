@@ -189,9 +189,11 @@
 }
 
 .carousel-inner > .carousel-item > img {
-    width:800px;
+    width: px;
     height: 716px;
     padding: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
 /* reviews */
@@ -210,8 +212,129 @@
 .rev-header{
     color: white;
     font-family: 'Inria Sans', sans-serif;
-    font-size: 48px;
+    font-size: 36px;
     margin: 0;
     display: flex;
     align-items: center;
 }
+
+.review-box{
+    background-color: #003049;
+    width: 420px;
+    height: 400px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.rev-boxs{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+.rev-txt{
+    font-size: 26px;
+    color: white;
+    font-family: 'Inria Sans', sans-serif;
+}
+
+.username{
+    display: flex;
+    justify-content: end;
+    font-family: 'Inria Sans', sans-serif;
+    color: white;
+    font-size: 26px;
+}
+
+@media (max-width: 992px) {
+    .rev-txt{
+        font-size: 21px;
+    }
+
+    .username{
+        font-size: 21px;
+    }
+
+    .rev-boxs{
+        gap: 20px;
+    }
+     
+ }
+
+ /* Merch */
+
+.merch-box{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    background-color:#003049;
+    height: 90px;
+}
+
+.merch-header{
+    color: white;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 36px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.mcard{
+    display: flex;
+    background-color: #003049;
+    border-width: 0;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+.merch-card{
+    display: flex;
+    justify-content:center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.mcard-body{
+    text-align: center;
+    align-items: center;
+}
+
+.mimg{
+    height: 250px;
+    border-radius: 10px;
+}
+
+.merch-card-text{
+    color: white;
+    display: flex;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 36px;
+    padding: 3px;
+}
+
+@media (max-width: 992px) {
+    .mcards{
+     flex-direction: column;
+    }
+ 
+    .merch-card{
+     width: 100%;
+    }
+     
+ }
+
+ @media (max-width: 992px) {
+     .merch-header{
+        font-size: 20px;
+        text-align: center;
+     }
+ }
