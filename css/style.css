@@ -155,3 +155,39 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 50%, rgba(0,48,73,1) 50%);
 .pimg3{
     height: 230.363px;
 }
+
+.gal-box{
+    display: flex;
+    justify-content: center;
+    background-color: #780000;
+    height: 90px;
+}
+
+.gal-header{
+    color: white;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 48px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.gal{
+    --bs-gutter-x: 0rem;
+}
+
+/* .carousel {
+    width:800px;
+    height:360px;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+  } */
+
+.carousel-inner > .carousel-item > img {
+    width:800px;
+    height: 716px;
+    padding: 50px;
+}
+
+
