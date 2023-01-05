@@ -56,12 +56,111 @@
 
 .my-footer {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+
     background-color: #003049;
 }
 
 .footer-contact-column {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.footer-contact-textbox {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 10%;
+}
+
+.social-row {
+    display: flex;
+    align-self: center;
+    gap: 1.75rem;
+}
+
+.social-icons {
+    height: 45px;
+    width: 45px;
+}
+
+.footer-map {
+    /* width: 100%;
+    max-width: 100%; */
+    max-height: 450px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.google-map iframe{ 
+    width: 90% !important; 
+    height: 90% !important;
+    display: block; 
+    }
+
+.footer-hours {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-hours-textbox {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 10%;
+}
+
+.footer-header-text {
+    color: white;
+    text-align: left;
+}
+
+.footer-text {
+    color: white;
+    text-align: left;
+    font-size: 16px;
+}
+
+@media (max-width: 992px) {
+    .footer-map {
+        display: none;
+    }
+
+    .footer-contact-column {
+        width: 50%;
+    }
+
+    .footer-hours {
+        width: 50%;
+    }
+
+    .footer-text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 425px) {
+    .footer-text {
+        font-size: 12px;
+    }
+
+    .social-row {
+        gap: .75rem;
+    }
+
+    .social-icons {
+        height: 35px;
+        width: 35px;
+    }
+
+    .footer-hours-textbox {
+        gap: 0.25rem;
+    }
 }
 
 /* Chris Styles */
@@ -196,9 +295,11 @@
 }
 
 .carousel-inner > .carousel-item > img {
-    width:800px;
+    width: px;
     height: 716px;
     padding: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
 /* reviews */
@@ -217,8 +318,129 @@
 .rev-header{
     color: white;
     font-family: 'Inria Sans', sans-serif;
-    font-size: 48px;
+    font-size: 36px;
     margin: 0;
     display: flex;
     align-items: center;
 }
+
+.review-box{
+    background-color: #003049;
+    width: 420px;
+    height: 400px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.rev-boxs{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+.rev-txt{
+    font-size: 26px;
+    color: white;
+    font-family: 'Inria Sans', sans-serif;
+}
+
+.username{
+    display: flex;
+    justify-content: end;
+    font-family: 'Inria Sans', sans-serif;
+    color: white;
+    font-size: 26px;
+}
+
+@media (max-width: 992px) {
+    .rev-txt{
+        font-size: 21px;
+    }
+
+    .username{
+        font-size: 21px;
+    }
+
+    .rev-boxs{
+        gap: 20px;
+    }
+     
+ }
+
+ /* Merch */
+
+.merch-box{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    background-color:#003049;
+    height: 90px;
+}
+
+.merch-header{
+    color: white;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 36px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.mcard{
+    display: flex;
+    background-color: #003049;
+    border-width: 0;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+.merch-card{
+    display: flex;
+    justify-content:center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.mcard-body{
+    text-align: center;
+    align-items: center;
+}
+
+.mimg{
+    height: 250px;
+    border-radius: 10px;
+}
+
+.merch-card-text{
+    color: white;
+    display: flex;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 36px;
+    padding: 3px;
+}
+
+@media (max-width: 992px) {
+    .mcards{
+     flex-direction: column;
+    }
+ 
+    .merch-card{
+     width: 100%;
+    }
+     
+ }
+
+ @media (max-width: 992px) {
+     .merch-header{
+        font-size: 20px;
+        text-align: center;
+     }
+ }
