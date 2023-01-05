@@ -99,7 +99,7 @@
     color: white;
     margin-top: 50px;
     font-weight: 300;
-    font-size: 66px;
+    font-size: 0px;
     font-family: 'Inria Sans', sans-serif;
 }
 /* .container {
@@ -110,6 +110,13 @@
     margin-left: auto;
     margin-right: auto;
 }
+.story {
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 29px;
+    font-weight: 100px;
+}
+
+
 
 /* Drew Styles */
 
