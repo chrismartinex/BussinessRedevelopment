@@ -1,3 +1,5 @@
+/* Drew Styles */
+
 /*Navbar styles*/
 
 .navbar {
@@ -163,6 +165,56 @@
     }
 }
 
+/* Header Styles */
+
+.header {
+    background-image: url("../Assets/gatti-vs-ward-geo-thomson\ 1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-textbox {
+    width: 700px;
+    text-align: center;
+    background-color: #780000;
+}
+
+.header-text {
+    color: white;
+}
+
+.price-button {
+    height: 113px;
+    width: 331px;
+    background-color: #780000;
+    color: white;
+    border-color: #780000;
+    font-size:xx-large;
+}
+
+.modal {
+    --bs-body-bg: #003049;
+    --bs-modal-bg: var(--bs-body-bg);
+    color: white;
+}
+
+.modal-footer {
+    justify-content: center;
+}
+
+.btn-secondary {
+    background-color: white;
+    color: black;
+}
+
+
 /* Chris Styles */
 
 /* #container {
@@ -214,13 +266,6 @@
     font-size: 29px;
     font-weight: 100px;
 }
-
-
-
-/* Drew Styles */
-
-
-
 
 
 /* Caroline Styles */
